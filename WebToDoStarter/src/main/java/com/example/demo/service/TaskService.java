@@ -9,6 +9,7 @@ public interface TaskService {
 
 	List<Task> findAll();
 
+	//一件のタスクを返す
 	Optional<Task> getTask(int id);
 
 	void insert(Task task);

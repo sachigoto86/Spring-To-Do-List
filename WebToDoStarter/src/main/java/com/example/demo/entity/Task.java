@@ -7,6 +7,7 @@ public class Task {
     private int id;
     private int userId;
     private int typeId;
+    //自作したオブジェクトをこのフィールドとしてもたせる。
     private TaskType taskType;
     private String title;
     private String detail;

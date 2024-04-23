@@ -8,6 +8,7 @@
 <h1 th:text="${title}">ようこそ</h1>
 <p th:if="${complete}" th:text="${complete}"></p>
 <form method="POST" th:action="${taskForm.newTask}? @{/task/insert} : @{/task/update}" th:object="${taskForm}">
+	<p th:value = "${taskForm.newTask}"></p>
 	<label>タスクタイプ（選択してください）：</label>
 	<select name="typeId">
 	<option value="1" th:selected="*{typeId == 1}">緊急</option>
